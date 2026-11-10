@@ -12,9 +12,9 @@
            ҮНДСЭН ӨНГӨ БОЛОН ФОНТЫН ТОХИРГОО
            ========================================= */
         :root {
-            --bg-color: #FDFBF7; /* Цайвар шаргал дэвсгэрт */
-            --text-main: #2c2c2c; /* Үндсэн хар саарал текст */
-            --text-muted: #4a4a4a; /* Дэд текст */
+            --bg-color: #FDFBF7;
+            --text-main: #2c2c2c;
+            --text-muted: #4a4a4a;
             --accent: #8b7355;
             --border-color: #e2dcd0;
         }
@@ -29,12 +29,9 @@
             background-color: var(--bg-color);
             color: var(--text-main);
             font-family: 'Lora', serif;
-            line-height: 1.6;
+            line-height: 1.8;
         }
 
-        /* =========================================
-           SCROLLBAR (ГҮЙЛГЭХ МӨР)
-           ========================================= */
         ::-webkit-scrollbar {
             width: 8px;
         }
@@ -77,4 +74,16 @@
         .main-menu a {
             text-decoration: none;
             color: var(--text-muted);
-            font-size: 0
+            font-size: 0.95rem;
+            transition: color 0.2s ease;
+        }
+
+        .main-menu a:hover, .main-menu a.active {
+            color: var(--text-main);
+            font-weight: 500;
+        }
+
+        /* =========================================
+           БИДНИЙ ТУХАЙ ХУУДАСНЫ БҮТЭЦ
+           ========================================= */
+        .about-container
